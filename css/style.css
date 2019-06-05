@@ -37,7 +37,21 @@ img{
 .txt_center{
   text-align: center;
 }
-
+/*Botones*/
+.boton{
+  text-decoration: none;
+  color:#fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  padding:1rem 3rem;
+}
+.btn_anaranjado{
+  background-color:#E08709;
+}
+.btn_verde{
+  background-color: #71b100;
+}
 
 /*Header*/
 .site-header.barra-menu{
@@ -106,4 +120,8 @@ img{
 }
 .col_inner_casasDeptos h3, .col_inner_casasDeptos p{
   margin:0px;
+}
+.precio{
+  color:#71b100;
+  font-weight: 700;
 }
