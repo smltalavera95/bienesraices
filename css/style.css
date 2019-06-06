@@ -1,6 +1,10 @@
 /*Global*/
 html{
   font-size: 62.5%; /*Reset para REMS - 62.5% =10px de 16px*/
+  box-sizing: border-box;/*Si se agrega un width y hay un padding, el padding no lo va tomar en cuenta*/
+}
+*, *:before, *:after{
+  box-sizing: border-box;
 }
 body{
   font-family: 'Lato', sans-serif;
@@ -37,14 +41,21 @@ img{
 .txt_center{
   text-align: center;
 }
+.disp_block{
+  display: block!important;
+}
+
 /*Botones*/
 .boton{
   text-decoration: none;
   color:#fff;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   padding:1rem 3rem;
+  display: inline-block;
+  margin-top: 3rem;
+  text-align: center;
 }
 .btn_anaranjado{
   background-color:#E08709;
@@ -124,4 +135,8 @@ img{
 .precio{
   color:#71b100;
   font-weight: 700;
+}
+.cnt_btnVerTodas{
+  display: flex;
+  justify-content:flex-end;
 }
