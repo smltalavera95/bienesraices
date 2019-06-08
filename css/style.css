@@ -47,7 +47,9 @@ img{
 .txt_negro{
   color:#000;
 }
-
+.cnt_centrado{
+  max-width: 80rem;
+}
 /*Botones*/
 .boton{
   text-decoration: none;
@@ -127,11 +129,13 @@ img{
 .cnt_casasDeptos{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .col_casasDeptos{
-  flex-basis: calc(33.3% - 1rem);
+  flex: 0 0 calc(33.3% - 1rem); /*Es lo mismo que flex-grow (crecer si puede), flex-shrink (encoja) y flex-basis*/
   border: 0.1rem solid #b5b5b5;
   background-color: #f5f5f5;
+  margin-bottom: 2rem;
 }
 .col_inner_casasDeptos{
   padding:2rem;
@@ -152,6 +156,8 @@ img{
   padding: 0;
   display: flex;
   justify-content: space-evenly;
+  max-width: 50rem;
+  flex:1;
 }
 .ul_iconos li{
   display: flex;
@@ -270,4 +276,11 @@ img{
   font-size: 2rem;
   margin:0;
   padding:3rem 0;
+}
+
+/*Pagina de Anuncio*/
+.resumen_propiedad{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
