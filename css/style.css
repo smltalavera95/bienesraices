@@ -68,6 +68,10 @@ img{
 }
 
 /*Header*/
+.site-header{
+  background-color: #333333;
+  padding: 1rem 0 3rem;
+}
 .site-header.barra-menu{
   background-image:url("../img/header.jpg");
   height: 100vh;
@@ -253,4 +257,17 @@ img{
   justify-content: space-between;
   align-items: center;
   padding:2rem 0rem;
+}
+
+/*Pagina Nosotros*/
+.cnt_sobreNosotros{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap:2.5rem;
+}
+.txt_nosotros blockquote{
+  font-weight: 900;
+  font-size: 2rem;
+  margin:0;
+  padding:3rem 0;
 }
