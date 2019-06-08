@@ -1,2 +1,2 @@
 # Proyect Bienes Raices
-##Proyect made in just HTML & CSS 
+<h2>Proyect made in just HTML & CSS </h2>
