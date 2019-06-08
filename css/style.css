@@ -211,8 +211,46 @@ img{
   text-decoration: none;
 }
 .seccion_inferior .testimonios{
-  flex-basis: calc(40% - 20rem);
+  flex-basis: calc(40% - 3rem);
 }
 .txt_entrada span{
   color:orange;
+}
+.col_testimonio{
+  background-color:#71B100;
+  color:#fff;
+  font-size: 2rem;
+  padding:2rem;
+  border-radius: 2rem;
+}
+.col_testimonio p{
+  text-align: right;
+}
+.col_testimonio blockquote:before{
+  content:'';
+  background-image: url('../img/comilla.svg');
+  width: 4rem;
+  height: 4rem;
+  position:absolute;
+  top:0rem;
+  left:-2rem;
+
+}
+.col_testimonio blockquote{
+  position:relative;
+  padding-left:5rem;
+  font-weight: 300;
+}
+
+/*Footer*/
+.site_footer{
+  background-color: #333333;
+  color:#fff;
+  margin-top:5rem;
+}
+.footer_contenedor{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:2rem 0rem;
 }
