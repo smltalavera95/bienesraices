@@ -44,6 +44,9 @@ img{
 .disp_block{
   display: block!important;
 }
+.txt_negro{
+  color:#000;
+}
 
 /*Botones*/
 .boton{
@@ -139,4 +142,77 @@ img{
 .cnt_btnVerTodas{
   display: flex;
   justify-content:flex-end;
+}
+.ul_iconos{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.ul_iconos li{
+  display: flex;
+}
+.ul_iconos li img{
+  margin-right: 1.8rem;
+}
+
+/*Contacto Home*/
+.img_contacto{
+  background-image: url('../img/encuentra.jpg');
+  min-height: 40rem;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.contenido_contacto{
+  flex:1;
+  color:#ffff;
+}
+.contenido_contacto p{
+  font-size: 1.8rem;
+}
+
+/*Seccion inferior*/
+.seccion_inferior{
+  display: flex;
+  justify-content: space-between;
+}
+.seccion_inferior .blog{
+  flex-basis: 60%;
+}
+.entrada{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom:2rem;
+}
+.entrada:last-of-type{
+  margin-bottom:0;
+}
+.entrada .img_entrada{
+  flex-basis: 40%;
+}
+.entrada .txt_entrada{
+  flex-basis:calc(60% - 3rem);
+}
+.txt_entrada h3{
+  margin:0;
+  line-height: 1.2;
+}
+.txt_entrada h3::after{
+  content: ' ';
+  display: block;
+  width:15rem;
+  height: 0.5rem;
+  background-color: #71B100;
+  margin-top:1rem;
+}
+.txt_entrada a{
+  text-decoration: none;
+}
+.seccion_inferior .testimonios{
+  flex-basis: calc(40% - 20rem);
+}
+.txt_entrada span{
+  color:orange;
 }
