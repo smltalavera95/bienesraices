@@ -61,6 +61,10 @@ img{
   display: inline-block;
   margin-top: 3rem;
   text-align: center;
+  border:none;
+}
+.boton:hover{
+  cursor:pointer;
 }
 .btn_anaranjado{
   background-color:#E08709;
@@ -280,6 +284,51 @@ img{
 
 /*Pagina de Anuncio*/
 .resumen_propiedad{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*Pagina de contacto*/
+form p{
+  font-size: 1.6rem;
+  color:#737373;
+  margin:2rem 0 0;
+}
+legend{
+  font-size: 2rem;
+  color:#030303;
+}
+label{
+  display: block;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+input:not([type="submit"]),/*Esto esta diciendo seleccione todos los inputs menos*/
+textarea,
+select{
+  background-color:#e1e1e1;
+  padding:0.5rem;
+  display: block;
+  width: 100%;
+  margin-bottom:2rem;
+  border:none;
+  border-radius: 0.5rem;
+}
+input[type="radio"]{
+  width:auto;
+  margin:0;
+}
+select{
+  -webkit-appereance:none;/*En dados casos que el navegador no agarre el appereance de abajo*/
+  appereance:none;
+}
+textarea{
+  height: 20rem;
+}
+.forma-contacto{
+  width: 30rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
