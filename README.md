@@ -4,4 +4,3 @@
 <h2>What is about?</h2>
 <p>It's about sell properties or houses, with 4 main pages: Home, About, Ads of Properties, Blog and Contact</p>
 <p>To see this project, go to: <a href="https://smltalavera95.github.io/bienesraices/" target="_blank">Bienes Raices Project</a></p>
-<h5>Still under construction... I have to make it responsive</h5>
