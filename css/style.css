@@ -12,6 +12,7 @@ body{
   line-height: 1.5;
 }
 .contenedor{
+  width: 95%;
   max-width: 120rem;/*=1200px*/
   margin:0 auto;
 }
@@ -61,7 +62,15 @@ img{
   display: inline-block;
   margin-top: 3rem;
   text-align: center;
+  display: block;
+  flex:0 0 100%;
   border:none;
+}
+ @media (min-width: 700px) {
+  .boton{
+    display: inline-block;
+    flex: 0 0 auto;
+  }
 }
 .boton:hover{
   cursor:pointer;
@@ -90,6 +99,12 @@ img{
   flex-direction: column;
   height: 100%;
   justify-content: space-between;
+  text-align: center;
+}
+ @media (min-width: 700px) {
+  .contenido-header{
+    text-align: left;
+  }
 }
 .contenido-header h1{
   color:#fff;
@@ -97,49 +112,97 @@ img{
   max-width: 60rem;
   line-height: 1.8;
 }
+
 .barra-principal{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding-top:3rem;
+}
+@media (min-width: 700px) {
+  .barra-principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
 }
 
 /*Navegacion*/
 .nav-principal a{
   color:#fff;
   text-decoration: none;
-  font-size: 1.8rem;/*=18px*/
-  margin-right:2rem;
+  font-size: 2.2rem;/*=18px*/
+  display: block;
 }
-.nav-principal a:last-of-type{
-  margin-right:0;
+ @media (min-width: 700px) {
+  .nav-principal a{
+    display: inline-block;
+    margin-right:2rem;
+    font-size: 1.8rem;
+  }
+  .nav-principal a:last-of-type{
+    margin-right:0;
+  }
 }
+
 .nav-principal a:hover{
   color:#71B100;
 }
-
+/*Mobile menu*/
+.mobile-menu img{
+  width:5rem;
+}
+ @media (min-width: 700px) {
+  .mobile-menu{
+    display: none;
+  }
+}
+.nav-principal:target{
+  display: block;
+}
+.nav-principal{
+  display: none;
+}
+ @media (min-width: 700px) {
+  .nav-principal{
+    display: block;
+  }
+}
 /* Sobre Nosotros */
-.cnt_nosotros{
-  display: flex;
-  justify-content: space-between;
+ @media (min-width: 700px) {
+   .cnt_nosotros{
+     display: flex;
+     justify-content: space-between;
+   }
 }
 .col_nosotros{
-  flex-basis: calc(33.3% - 2rem);
+
+  text-align: center;
+}
+ @media (min-width: 700px) {
+  .col_nosotros{
+    flex-basis: calc(33.3% - 2rem);
+  }
 }
 .col_nosotros h3{
   text-transform: uppercase;
 }
 /*Casas y Deptos*/
-.cnt_casasDeptos{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+ @media (min-width: 800px) {
+   .cnt_casasDeptos{
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+   }
 }
+
 .col_casasDeptos{
-  flex: 0 0 calc(33.3% - 1rem); /*Es lo mismo que flex-grow (crecer si puede), flex-shrink (encoja) y flex-basis*/
   border: 0.1rem solid #b5b5b5;
   background-color: #f5f5f5;
   margin-bottom: 2rem;
+}
+ @media (min-width: 700px) {
+  .col_casasDeptos{
+    flex: 0 0 calc(33.3% - 1rem); /*Es lo mismo que flex-grow (crecer si puede), flex-shrink (encoja) y flex-basis*/
+  }
 }
 .col_inner_casasDeptos{
   padding:2rem;
@@ -180,7 +243,7 @@ img{
   align-items: center;
 }
 .contenido_contacto{
-  flex:1;
+  flex:0 0 95%;
   color:#ffff;
 }
 .contenido_contacto p{
@@ -188,26 +251,37 @@ img{
 }
 
 /*Seccion inferior*/
-.seccion_inferior{
-  display: flex;
-  justify-content: space-between;
-}
-.seccion_inferior .blog{
-  flex-basis: 60%;
+ @media (min-width: 700px) {
+   .seccion_inferior{
+     display: flex;
+     justify-content: space-between;
+   }
+   .seccion_inferior .blog{
+     flex-basis: 60%;
+   }
+   .seccion_inferior .testimonios{
+     flex-basis: calc(40% - 3rem);
+   }
 }
 .entrada{
-  display: flex;
-  justify-content: space-between;
   margin-bottom:2rem;
+}
+ @media (min-width: 700px) {
+  .entrada{
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .entrada:last-of-type{
   margin-bottom:0;
 }
-.entrada .img_entrada{
-  flex-basis: 40%;
-}
-.entrada .txt_entrada{
-  flex-basis:calc(60% - 3rem);
+ @media (min-width: 700px) {
+   .entrada .img_entrada{
+     flex-basis: 40%;
+   }
+   .entrada .txt_entrada{
+     flex-basis:calc(60% - 3rem);
+   }
 }
 .txt_entrada h3{
   margin:0;
@@ -224,9 +298,7 @@ img{
 .txt_entrada a{
   text-decoration: none;
 }
-.seccion_inferior .testimonios{
-  flex-basis: calc(40% - 3rem);
-}
+
 .txt_entrada span{
   color:orange;
 }
@@ -263,17 +335,24 @@ img{
   margin-top:5rem;
 }
 .footer_contenedor{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
   padding:2rem 0rem;
+}
+ @media (min-width: 700px) {
+  .footer_contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 /*Pagina Nosotros*/
-.cnt_sobreNosotros{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap:2.5rem;
+ @media (min-width: 700px) {
+  .cnt_sobreNosotros{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap:2.5rem;
+  }
 }
 .txt_nosotros blockquote{
   font-weight: 900;
